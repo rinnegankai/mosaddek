@@ -1,3 +1,131 @@
-/*
-	scss
-*/
+@import 'variables';
+@import 'mixins';
+body{
+  font-family: 'Open Sans',$font;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 1.5;
+  overflow-x:hidden;
+   @include font-smoothing(antialiased);
+   text-rendering: optimizeLegibility;
+}
+a{
+  @include transition(all .3s);
+  &:hover{
+    @include transition(all .3s);
+    text-decoration: none;
+  }
+  &:focus{
+    @include transition(all .3s);
+    text-decoration: none;
+  }
+  button:hover{
+    @include transition(all .3s);
+    text-decoration: none;
+  }
+}
+button{
+  @include transition(all .3s);
+  &:hover{
+    @include transition(all .3s);
+    text-decoration: none;
+  }
+  &:focus{
+    @include transition(all .3s);
+    text-decoration: none;
+  }
+  button:hover{
+    @include transition(all .3s);
+    text-decoration: none;
+  }
+}
+.btn
+{
+  border-radius: 0;
+}
+   .light-txt{
+     h1{
+       margin-top: 0;
+       color: $default_color;
+     }
+     h2{
+       color: $default_color;
+     }
+     h3{
+       color: $default_color;
+     }
+     h4{
+       color: $default_color;
+     }
+     h5{
+       margin-top: 0;
+       color: $default_color;
+     }
+     p{
+       margin-top: 0;
+       color: $default_color;
+     }
+     .sub-title{
+       margin-top: 0;
+       color: $default_color;
+     }
+     div{
+       margin-top: 0;
+       color: $default_color;
+     }
+     span{
+       color: $default_color;
+     }
+   }
+.section-title{
+  display: block;
+  margin-bottom: 100px;
+  .title{
+    font-size:30px;
+    font-weight: 800;
+    display: inline-block;
+    margin-top:0;
+    margin-bottom: 20px;
+    text-transform:uppercase;
+  }
+  .sub-title{
+    line-height: 30px;
+    color:gray;
+  }
+  &.text-left h1{
+    margin-right: $margin;
+  }
+  &.text-right h1{
+    margin-right: $margin;
+  }
+
+  &.light-txt .separator{
+    &:before{
+      background: $default_color;
+    }
+    &:after{
+      background: $default_color;
+    }
+  }
+}
+.separator
+{
+  position: relative;
+  &:before
+  {
+    @include separator(absolute,-3px,-20px,2px,40px,'',$default_color_1);
+  }
+  &:after
+  {
+    @include separator(absolute,-3px,-20px,2px,40px,'',$default_color_1);
+  }
+  &.center:after
+  {
+    margin: 0 auto;
+  }
+  &.right:after
+  {
+    right: 0;
+    left: auto;
+  }
+}

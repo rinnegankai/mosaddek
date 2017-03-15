@@ -1,0 +1,19 @@
+@mixin font-smoothing($value) {
+  -webkit-font-smoothing:$value;
+  -moz-font-smoothing:$value;
+}
+
+@mixin transition($value1){
+  -webkit-transition: $value1;
+          transition: $value1;
+}
+
+@mixin separator($position,$top,$right,$width,$height,$content,$background){
+  position: $position;
+  top: $top;
+  right: $right;
+  width: $width;
+  height: $height;
+  content: $content;
+  background: $background;
+}

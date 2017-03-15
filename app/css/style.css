@@ -1,3 +1,169 @@
-/*
-	css
-*/
+body {
+  font-family: "Open Sans", sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 1.5;
+  overflow-x: hidden;
+  -webkit-font-smoothing: antialiased;
+  -moz-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+}
+
+a {
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+}
+
+a:hover {
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+  text-decoration: none;
+}
+
+a:focus {
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+  text-decoration: none;
+}
+
+a button:hover {
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+  text-decoration: none;
+}
+
+button {
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+}
+
+button:hover {
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+  text-decoration: none;
+}
+
+button:focus {
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+  text-decoration: none;
+}
+
+button button:hover {
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+  text-decoration: none;
+}
+
+.btn {
+  border-radius: 0;
+}
+
+.light-txt h1 {
+  margin-top: 0;
+  color: #fff;
+}
+
+.light-txt h2 {
+  color: #fff;
+}
+
+.light-txt h3 {
+  color: #fff;
+}
+
+.light-txt h4 {
+  color: #fff;
+}
+
+.light-txt h5 {
+  margin-top: 0;
+  color: #fff;
+}
+
+.light-txt p {
+  margin-top: 0;
+  color: #fff;
+}
+
+.light-txt .sub-title {
+  margin-top: 0;
+  color: #fff;
+}
+
+.light-txt div {
+  margin-top: 0;
+  color: #fff;
+}
+
+.light-txt span {
+  color: #fff;
+}
+
+.section-title {
+  display: block;
+  margin-bottom: 100px;
+}
+
+.section-title .title {
+  font-size: 30px;
+  font-weight: 800;
+  display: inline-block;
+  margin-top: 0;
+  margin-bottom: 20px;
+  text-transform: uppercase;
+}
+
+.section-title .sub-title {
+  line-height: 30px;
+  color: gray;
+}
+
+.section-title.text-left h1 {
+  margin-right: 20px;
+}
+
+.section-title.text-right h1 {
+  margin-right: 20px;
+}
+
+.section-title.light-txt .separator:before {
+  background: #fff;
+}
+
+.section-title.light-txt .separator:after {
+  background: #fff;
+}
+
+.separator {
+  position: relative;
+}
+
+.separator:before {
+  position: absolute;
+  top: -3px;
+  right: -20px;
+  width: 2px;
+  height: 40px;
+  content: "";
+  background: #333;
+}
+
+.separator:after {
+  position: absolute;
+  top: -3px;
+  right: -20px;
+  width: 2px;
+  height: 40px;
+  content: "";
+  background: #333;
+}
+
+.separator.center:after {
+  margin: 0 auto;
+}
+
+.separator.right:after {
+  right: 0;
+  left: auto;
+}
